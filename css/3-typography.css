@@ -1,0 +1,52 @@
+h1, h3, h5 {
+  font-family: "Mulish", sans-serif;
+}
+  
+.h1 {
+  font-size: var(--h1);
+  line-height: var(--lh-h1);
+  font-weight: 600;
+}
+  
+.h3 {
+  font-size: var(--h3);
+  line-height: var(--lh-h3);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+  
+.h5 {
+  font-size: var(--h5);
+  line-height: var(--lh-53);
+  font-weight: 500;
+}
+  
+p {
+  font-family: "Inter", sans-serif;
+  font-size: var(--body);
+  line-height: var(--lh-body);
+  color: var(--color-gray);
+}
+  
+i {
+  font-size: var(--h5);
+  color: var(--color-primary);
+}
+
+.i-lg {
+  font-size: var(--h3);
+  color: var(--color-white);
+}
+
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: var(--h3);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h3 {
+    font-size: var(--h5);
+  }
+}

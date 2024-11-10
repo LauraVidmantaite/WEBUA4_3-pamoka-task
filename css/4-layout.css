@@ -1,0 +1,125 @@
+.bento-grid {
+  display: grid;
+  max-width: 1440px;
+  gap: 1.25rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+    "school school school name name"
+    "music music image name name"
+    "skills skills skills age age"
+    "work work trait trait trait"
+    "dream dream hobbies plan plan"
+    "game game hobbies fact fact"
+}
+  
+.name {
+  grid-area: name;
+}
+  
+.age {
+  grid-area: age;
+}
+  
+.image {
+  grid-area: image;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+  
+.school {
+  grid-area: school;
+}
+  
+.music {
+  grid-area: music;
+}
+  
+.skills {
+  grid-area: skills;
+}
+  
+.trait {
+  grid-area: trait;
+}
+  
+.work {
+  grid-area: work;
+}
+  
+.hobbies {
+  grid-area: hobbies;
+}
+  
+.dream {
+  grid-area: dream;
+}
+  
+.game {
+  grid-area: game;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+  
+.plan {
+  grid-area: plan;
+}
+  
+.fact {
+  grid-area: fact;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+      "school school name name"
+      "image music music music"
+      "skills skills age age"
+      "work work trait trait"
+      "dream dream dream hobbies"
+      "game game game hobbies"
+      "plan plan fact fact"
+  }
+}
+  
+@media screen and (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "name name name"
+      "image age age"
+      "school school school"
+      "music music music"
+      "trait trait trait"
+      "skills skills skills"
+      "work work work"
+      "dream dream dream"
+      "game game game"
+      "plan plan plan"
+      "hobbies hobbies hobbies"
+      "fact fact fact"
+  }
+} 
+  
+@media screen and (max-width: 480px) {
+  .bento-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "name"
+      "image"
+      "age"
+      "school"
+      "music"
+      "trait"
+      "skills"
+      "work"
+      "dream"
+      "game"
+      "plan"
+      "hobbies"
+      "fact"
+  }
+}
