@@ -71,8 +71,15 @@ body {
     gap: initial;
   }
 
+  .box_content-icons--horizontal {
+    justify-content: center;
+    width: 100%;
+  }
+  
   .box_content-icons--vertical {
     flex-direction: initial;
+    justify-content: center;
+    width: 100%;
   }
 }
 

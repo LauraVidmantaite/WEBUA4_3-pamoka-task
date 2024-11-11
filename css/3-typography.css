@@ -49,4 +49,7 @@ i {
   .h3 {
     font-size: var(--h5);
   }
+  .i-lg {
+    font-size: var(--h5);
+  }
 }
