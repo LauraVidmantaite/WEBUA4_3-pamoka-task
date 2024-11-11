@@ -49,6 +49,7 @@ body {
 .box_content-icons--vertical {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4rem;
 }
 
